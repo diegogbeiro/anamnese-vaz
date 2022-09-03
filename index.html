@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamnese</title>
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">    
+</head>
+<body>
+    <header>
+        <img src="imagens/favicon_io/android-chrome-192x192.png" alt="Vaz Odontologia">
+        <h1></h1>
+    </header>
+
+    <main>
+        <form action="anamnese.php" method="post">
+            <fieldset>
+                <div>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required placeholder="Nome Completo">
+                    </p>
+                </div>  
+             
+                <div>
+                    <p>
+                        <label for="nascimento">Data de Nascimento:</label>
+                        <input type="datetime" name="datanascimento" id="datanascimento" placeholder="dd/mm/aaaaa" size="8">
+                    </p>
+                </div>
+                
+                <div>
+                    <label for="">Sexo:</label>
+                    <label for="">
+                        <input type="radio" name="deweb" id="masculino" value="masculino"><strong>Masculino</strong>
+                    </label>
+                    <label for="">
+                        <input type="radio" name="deweb" id="feminino" value="feminino"><strong>Feminino</strong>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div>
+                    <p>
+                        <label for="">1. Qual Motivo da consulta?</label>
+                        <input type="text" name="motivo" id="motivo" placeholder="Motivo">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">2. Está ou esteve recentemente em tratamento médico?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong> 
+                        </label>
+                        <label for="">Qual?</label>
+                        <label for="">
+                            <input type="text" name="qual" id="qual" placeholder="Informe qual o tratamento você esta ou estve fazendo " size="44">                            
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label>                        
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">3. Está tomando algum medicamento? </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong> 
+                        </label>
+                        <label for="">Qual?</label>
+                        <label for="">
+                            <input type="text" name="qual" id="qual" placeholder="Informe qual o remedio você esta tomando" size="32">                            
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label>                        
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">4. Diabetes?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label>  
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">5. Gastrite ou Ulcera?</label>                        
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">6. Anemia?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">7. Hepatite?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">8. Possui alguma doença cardiaca?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">9. Hipertensão?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">10. Glaucoma?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">11. Sofre algum tipo de alergia?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">Qual?</label>
+                        <label for="">
+                            <input type="text" name="qual" id="qual" placeholder="Informe qual é sua alergia" size="32">                            
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="">12. Possui algum vício?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">Qual?</label>
+                        <label for="">
+                            <input type="text" name="qual" id="qual" placeholder="Informe qual seu vício" size="32">                            
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div>
+                    <p>
+
+                    </p>
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+
+
+</body>
+</html>
