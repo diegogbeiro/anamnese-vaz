@@ -5,32 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anamnese</title>
-    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">    
+    <link rel="shortcut icon" href="imagens/favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <header>
-        <img src="imagens/favicon_io/android-chrome-192x192.png" alt="Vaz Odontologia">
-        <h1></h1>
+        <div class="imagemheader"><img src="imagens/favicon_io/android-chrome-192x192.png" alt="Vaz Odontologia"></div>
+        <h1 id="titulo">Anamnese Vaz Odontologia</h1>
     </header>
 
     <main>
         <form action="anamnese.php" method="post">
             <fieldset>
-                <div>
+                <div class="campo">
                     <p>
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" required placeholder="Nome Completo">
                     </p>
                 </div>  
              
-                <div>
+                <div class="campo">
                     <p>
                         <label for="nascimento">Data de Nascimento:</label>
                         <input type="datetime" name="datanascimento" id="datanascimento" placeholder="dd/mm/aaaaa" size="8">
                     </p>
                 </div>
                 
-                <div>
+                <div class="campo">
                     <label for="">Sexo:</label>
                     <label for="">
                         <input type="radio" name="deweb" id="masculino" value="masculino"><strong>Masculino</strong>
@@ -42,13 +43,13 @@
             </fieldset>
 
             <fieldset>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">1. Qual Motivo da consulta?</label>
                         <input type="text" name="motivo" id="motivo" placeholder="Motivo">
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">2. Está ou esteve recentemente em tratamento médico?</label>
                         <label for="">
@@ -63,7 +64,7 @@
                         </label>                        
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">3. Está tomando algum medicamento? </label>
                         <label for="">
@@ -78,7 +79,7 @@
                         </label>                        
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">4. Diabetes?</label>
                         <label for="">
@@ -89,7 +90,7 @@
                         </label>  
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">5. Gastrite ou Ulcera?</label>                        
                         <label for="">
@@ -100,7 +101,7 @@
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">6. Anemia?</label>
                         <label for="">
@@ -111,7 +112,7 @@
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">7. Hepatite?</label>
                         <label for="">
@@ -122,7 +123,7 @@
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">8. Possui alguma doença cardiaca?</label>
                         <label for="">
@@ -133,7 +134,7 @@
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">9. Hipertensão?</label>
                         <label for="">
@@ -144,7 +145,7 @@
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">10. Glaucoma?</label>
                         <label for="">
@@ -155,7 +156,7 @@
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">11. Sofre algum tipo de alergia?</label>
                         <label for="">
@@ -163,14 +164,14 @@
                         </label>
                         <label for="">Qual?</label>
                         <label for="">
-                            <input type="text" name="qual" id="qual" placeholder="Informe qual é sua alergia" size="32">                            
+                            <input type="text" name="qual" id="qual" placeholder="Informe qual é sua alergia" size="20">                            
                         </label>
                         <label for="">
                             <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
                         <label for="">12. Possui algum vício?</label>
                         <label for="">
@@ -178,22 +179,74 @@
                         </label>
                         <label for="">Qual?</label>
                         <label for="">
-                            <input type="text" name="qual" id="qual" placeholder="Informe qual seu vício" size="32">                            
+                            <input type="text" name="qual" id="qual" placeholder="Informe qual seu vício" size="16">                            
                         </label>
                         <label for="">
                             <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
                         </label> 
                     </p>
                 </div>
-                <div>
+                <div class="pergunta">
                     <p>
-
+                        <label for="">13. Esta grávida?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">Quantas semanas?</label>
+                        <label for="">
+                            <input type="text" name="qual" id="qual" placeholder="Quantas Semanas de Gestação" size="24">                            
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div class="pergunta">
+                    <p>
+                        <label for="">14. Já apresentou problema hemorrágico?</label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong>
+                        </label>
+                    </p>
+                </div>
+                <div class="pergunta">
+                    <p>
+                        <label for="">15. Possui alguma doença que não foi citada? </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="sim"><strong>SIM</strong>
+                        </label>
+                        <label for="">Qual?</label>
+                        <label for="">
+                            <input type="text" name="qual" id="qual" placeholder="qual doença possui" size="16">                            
+                        </label>
+                        <label for="">
+                            <input type="radio" name="deweb" id="nao"><strong>NÃO</strong> 
+                        </label> 
+                    </p>
+                </div>
+                <div class="pergunta">
+                    <p>
+                        <label for="">16. Qual sua P.A (Pressão Arterial)?</label>
+                        <input type="text" name="pa" id="pa" placeholder="Pressão Arterial (P.A)" size="16">
+                    </p>
+                </div>
+                <div class="pergunta">
+                    <p>
+                        <label for="">17. Deixe sua rede social:</label>
+                        <input type="text" name="redesocial" id="redesocial" placeholder="instagran/facebook" size="16">
                     </p>
                 </div>
             </fieldset>
-
+            <button type="submit" class="botao">Enaviar</button>
         </form>
     </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="#"><strong>Diego G. Beiro</strong></a></p>
+    </footer> 
 
 
 </body>
